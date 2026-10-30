@@ -14,7 +14,7 @@ app.get('/api/message', async (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.send(`<h1>Express Frontend (v1)</h1>
+  res.send(`<h1>Express Frontend (v2)</h1>
 <p id="m">Loading from Flask...</p>
 <script>fetch('/api/message').then(r=>r.json()).then(d=>document.getElementById('m').innerText=d.message||d.error)</script>`);
 });
